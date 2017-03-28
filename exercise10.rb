@@ -14,5 +14,6 @@ def cohort_printout(list)
 
 end
 
+students[:cohort4] = 44
 
 cohort_printout(students)
