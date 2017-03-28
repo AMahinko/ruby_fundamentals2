@@ -13,7 +13,10 @@ neighbors_dogs = [
 def get_absent_dogs(array)
 
   for dog in array do
-    puts dog
+
+    for key in dog do
+      puts key
+    end
   end
 
 end
