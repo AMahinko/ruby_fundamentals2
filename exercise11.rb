@@ -14,9 +14,10 @@ def get_absent_dogs(array)
 
   for dog in array do
 
-    for key in dog do
+    dog.each do |key, value|
       puts key
     end
+
   end
 
 end
