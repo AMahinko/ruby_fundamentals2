@@ -11,15 +11,20 @@ neighbors_dogs = [
 ]
 
 def get_absent_dogs(array)
+  absent_dogs = []
 
   for dog in array do
 
     dog.each do |key, value|
-      puts key
+      if value.is_a?(Numeric) == true
+        absent_dogs << dog if value > 10
+      end
     end
 
   end
 
+  return absent_dogs
+
 end
 
-get_absent_dogs(my_dogs)
+puts get_absent_dogs(my_dogs)
