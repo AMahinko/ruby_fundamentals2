@@ -35,3 +35,4 @@ end
 end
 
 puts get_absent_dogs(my_dogs)
+puts get_absent_dogs(neighbors_dogs)
