@@ -12,6 +12,7 @@ neighbors_dogs = [
 
 def get_absent_dogs(array)
   absent_dogs = []
+  callback = []
 
   for dog in array do
 
@@ -23,7 +24,13 @@ def get_absent_dogs(array)
 
   end
 
-  return absent_dogs
+for dog in absent_dogs
+  dog.each do |key, value|
+    callback << "Come back, " + value.to_s + "!" if value.is_a?(String) == true
+  end
+end
+
+  return callback
 
 end
 
