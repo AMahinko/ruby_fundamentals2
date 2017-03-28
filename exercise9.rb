@@ -39,3 +39,7 @@ end
 end
 
 banana_test(shopping)
+
+puts shopping[1]
+
+list_astrisk(shopping.sort)
